@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
-    "webpack"
+    "rays",
+    "sunglasses"
   ],
   "author": "js p",
   "license": "ISC",
