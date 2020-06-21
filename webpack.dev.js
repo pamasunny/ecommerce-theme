@@ -20,32 +20,9 @@ module.exports = merge(config, {
 			{
 				test: /\.scss$/,
 				use: [
-				{
-					loader : 'style-loader',
-				},
-				{
-					loader: 'css-loader',
-					options: {
-						sourceMap: true,
-						modules: true,
-						
-					}
-				},
-				{
-					loader: 'postcss-loader',
-					options: {
-						sourceMap: true,
-						consfig: {
-							path: 'postcss.config.js'
-						}
-					}
-				},
-				{
-					loader : 'sass-loader',
-					options: {
-						sourceMap: true
-					}
-				}
+				"style-loader",
+				"css-loader",
+				"sass-loader"
 				]
 			}
 		]

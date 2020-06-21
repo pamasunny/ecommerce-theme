@@ -1,7 +1,6 @@
-// @import "variables/_customvar";
+
+@import "variables/_customvar";
+@import "style/_style.scss";
 @import "~bootstrap/scss/bootstrap";
 
 
-.ribbon {
-	background-color: #100000;
-}
