@@ -38,13 +38,12 @@ module.exports = merge(config, {
 				MiniCssExrtractPlugin.loader,
 				"css-loader",
 				{
-				loader: "postcss-loader",
-				options: {
-					config: {
-						path: path.resolve(__dirname,'postcss.config.js')
-					}
-				}
-				},
+      			loader: 'postcss-sass-loader',
+      			options: {
+        			alias: {
+           			 "@test": "/home/test"
+        		}
+				}},
 				"sass-loader"
 				]
 			}

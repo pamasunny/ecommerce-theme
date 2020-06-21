@@ -22,6 +22,13 @@ module.exports = merge(config, {
 				use: [
 				"style-loader",
 				"css-loader",
+				{
+      			loader: 'postcss-sass-loader',
+      			options: {
+        			alias: {
+           			 "@test": "/home/test"
+        		}
+				}},
 				"sass-loader"
 				]
 			}
