@@ -5,6 +5,7 @@ const path = require("path");
 module.exports = {
   entry: {
     main: "./src/index.js",
+    vendor: "./src/assets/js/external.js"
   },
   module: {
     rules: [
