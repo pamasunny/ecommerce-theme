@@ -47,9 +47,10 @@ $(document).ready(function() {
 //slick-carousel
 $(document).ready(function(){
   $('.hero-carousel').slick({
-    accessblity: true,
+    //accessblity: true,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    dots: true,
   });
 });
 				
