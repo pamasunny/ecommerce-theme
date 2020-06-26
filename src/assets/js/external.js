@@ -27,14 +27,21 @@ $(document).ready(function() {
 		
 		out.addClass("navbar-nav d-flex flex-row ");
 		out.html(outer.html());
+		
+		$("#icon-nav").addClass("bg-light fixed-top h-100");
+
 	} else {
 		// console.log("large");
+		$("#icon-nav").removeClass("bg-light fixed-top h-100");		
 		out.html(out.hide());
 		outer.show().html();
+
 	}
 	}
 	// console.log("live");
 });
+
+
 	
 	
 		
