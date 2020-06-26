@@ -3,9 +3,59 @@
 @import "style/_style.scss";
 @import "~bootstrap/scss/bootstrap";
 
-.hero {
-	background: url("../images/hero-1.jpg") no-repeat cover;
-	
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
+}
+
+.navbar  {
+	position: absolute;
+	background: transparent !important;
+	width: 100%;
+	z-index: 100;
+	display: block;
+
+	// .navbar-collapse {
+	// 	background-color: #2d3436;
+	// 	width: 70%;
+	// 	top: 0;
+	// 	left: 0;
+
+
+	// 	.navbar-nav {
+	// 		color: #f0f0f0;
+	// 	}
+	// }
 }
 
 
+
+.bg-info {
+	position: absolute;
+	margin-top: 5.5rem;
+	width: 100%;
+	z-index: 10;
+	display: block; 
+}
+
+.hero {
+	background-color: #ffeaa7;
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+}
