@@ -1,5 +1,8 @@
-import 'bootstrap';
+import "bootstrap";
 import $ from "jquery";
+import "slick-carousel";
+
+
 
 $(document).ready(function() {
 	
@@ -41,6 +44,15 @@ $(document).ready(function() {
 	// console.log("live");
 });
 
+//slick-carousel
+$(document).ready(function(){
+  $('.hero-carousel').slick({
+    accessblity: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
+});
+				
 
 	
 	

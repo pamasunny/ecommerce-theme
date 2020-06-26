@@ -3,6 +3,10 @@
 @import "style/_style.scss";
 @import "~bootstrap/scss/bootstrap";
 
+body {
+	overflow-x: hidden;
+}
+
 
 
 
@@ -64,8 +68,26 @@
 }
 
 
-.hero {
+.hero-carousel-1 {
 	background-color: #ffeaa7;
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.hero-carousel-2 {
+	background-color: #999;
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.hero-carousel-3 {
+	background-color: #bbb;
 	display: block;
 	position: relative;
 	width: 100vw;
