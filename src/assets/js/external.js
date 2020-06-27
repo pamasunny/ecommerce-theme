@@ -63,13 +63,13 @@ $(document).ready(function(){
 
 //slick-carousel-sale-slider
 //
-// $('.sale-slider').slick({
-//  // infinite: true,
-//   //speed: 300,
-//   slidesToShow: 2,
-//   centerMode: true,
-//   variableWidth: true
-// });
+$('.sale-slider').slick({
+ // infinite: true,
+  //speed: 300,
+  slidesToShow: 2,
+  centerMode: true,
+  variableWidth: true
+});
 
 // 
 // best-seller

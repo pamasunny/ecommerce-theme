@@ -64,7 +64,7 @@ body {
 	height: 60vh;
 
 	@include media-breakpoint-up(md) {
-		//background-color: #111;	
+		background-color: #111;	
 		height: 100vh;
 	}
 
@@ -119,8 +119,12 @@ body {
 	flex-direction: row;
 	overflow: hidden;
 
+}
 	.slider-1 {
 		background-color: #555;
+		display: flex;
+		position: relative;
+		flex-direction: row;
 		width: 10em;
 		height: 20vh;
 	
@@ -128,6 +132,10 @@ body {
 
 	.slider-2 {
 		background-color: #777;
+		display: flex;
+		position: relative;
+		flex-direction: row;
+
 		width: 10em;
 		height: 20vh;
 		
@@ -135,6 +143,9 @@ body {
 
 	.slider-3 {
 		background-color: #999;
+		display: flex;
+		position: relative;
+	flex-direction: row;
 		width: 10em;
 		height: 20vh;
 		
@@ -142,15 +153,19 @@ body {
 
 	.slider-4 {
 		background-color: #bbb;
+		display: flex;
+		position: relative;
+	flex-direction: row;
 		width: 10em;
 		height: 20vh;
 		
 	}
-}
+
 
 
 .best-seller {
 	background-color: #bbb;
 	height: 20vh;
 	overflow: hidden;
+
 }
