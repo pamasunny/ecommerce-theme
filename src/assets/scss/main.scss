@@ -5,6 +5,9 @@
 
 body {
 	overflow-x: hidden;
+	@include media-breakpoint-up(md) {
+		overflow-x: hidden;
+	}
 }
 
 
@@ -31,18 +34,6 @@ body {
 	width: 100%;
 	z-index: 100;
 	display: block;
-
-	// .navbar-collapse {
-	// 	background-color: #2d3436;
-	// 	width: 70%;
-	// 	top: 0;
-	// 	left: 0;
-
-
-	// 	.navbar-nav {
-	// 		color: #f0f0f0;
-	// 	}
-	// }
 }
 
 
@@ -53,44 +44,106 @@ body {
 	width: 100%;
 	z-index: 10;
 	display: block; 
-
 }
 
 
 #icon-nav {
-	@include media-breakpoint-down(md) {
-		
 	width: 23em;
 	flex-direction: column;
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		flex-direction: row;
 
 	
 	}
 }
 
+.hero {
+	background-color: #111;
+	overflow: hidden;
+	height: 60vh;
 
-.hero-carousel-1 {
-	background-color: #ffeaa7;
-	display: block;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-
-}
-
-.hero-carousel-2 {
-	background-color: #999;
-	display: block;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
+	@include media-breakpoint-up(md) {
+		//background-color: #111;	
+		height: 100vh;
+	}
 
 }
 
-.hero-carousel-3 {
-	background-color: #bbb;
-	display: block;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
+
+	
+	.hero-carousel-1 {
+		background-color: #ffeaa7;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+
+		// @include media-breakpoint-down(md) {
+		// 	height: 40vw;
+		// }
+
+	 
+	}
+
+	.hero-carousel-2 {
+		background-color: #999;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		
+		// @include media-breakpoint-down(md) {
+		// 	height: 40vw;
+		// }
+	
+		
+	}
+
+	.hero-carousel-3 {
+		background-color: #bbb;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	
+		// @include media-breakpoint-down(md) {
+		// 	height: 40vw;
+		// }
+		
+	}
+
+.sale {
+	// overflow: hidden;
+	//overflow: hidden;
+
 
 }
+	.sale-aviator {
+		background-color: #555;
+		
+		height: 20vh;
+	
+	}
+
+	.sale-wayfarer {
+		background-color: #777;
+		
+		height: 20vh;
+		
+	}
+
+	.sale-cat {
+		background-color: #999;
+		
+		height: 20vh;
+		
+	}
+
+	.sale-classic {
+		background-color: #bbb;
+		
+		height: 20vh;
+		
+	}
+
