@@ -113,41 +113,44 @@ body {
 		
 	}
 
-.sale {
-	// overflow: hidden;
-	//overflow: hidden;
+.sale-slider {
 
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
 
-}
-	.sale-aviator {
+	.slider-1 {
 		background-color: #555;
-		
+		width: 10em;
 		height: 20vh;
 	
 	}
 
-	.sale-wayfarer {
+	.slider-2 {
 		background-color: #777;
-		
+		width: 10em;
 		height: 20vh;
 		
 	}
 
-	.sale-cat {
+	.slider-3 {
 		background-color: #999;
-		
+		width: 10em;
 		height: 20vh;
 		
 	}
 
-	.sale-classic {
+	.slider-4 {
 		background-color: #bbb;
-		
+		width: 10em;
 		height: 20vh;
 		
 	}
+}
+
 
 .best-seller {
 	background-color: #bbb;
 	height: 20vh;
+	overflow: hidden;
 }
