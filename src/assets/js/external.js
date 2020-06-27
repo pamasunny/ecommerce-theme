@@ -55,6 +55,13 @@ $(document).ready(function(){
 });
 
 //slick-carousel for sale
+//
+//
+// $('.sale').slick({
+//   infinite: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 2
+// });
 
 // $('.sale').slick({
 //   dots: true,
