@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const config = require("./webpack.config");
 const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -13,7 +14,13 @@ module.exports = merge(config, {
 	plugins: [
 	new HtmlWebpackPlugin({
 		template: "./src/index.html"
-		})
+		}),
+	new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
+
 	],
 	module: {
 		rules: [

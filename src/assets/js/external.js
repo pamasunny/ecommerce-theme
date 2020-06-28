@@ -4,6 +4,7 @@ import "slick-carousel";
 
 
 
+
 $(document).ready(function() {
 	
 	// variable init
@@ -63,16 +64,15 @@ $(document).ready(function(){
 
 //slick-carousel-sale-slider
 //
-$('.sale-slider').slick({
- // infinite: true,
-  //speed: 300,
-  slidesToShow: 2,
-  centerMode: true,
-  variableWidth: true
-});
+$(document).ready(function(){
+	$('.sale-slider').slick({
+  		infinite: true,
+  		slidesToShow: 2,
+  		slidesToScroll: 1,
+  		autoplay: true
 
-// 
-// best-seller
+	});
+});
 
 				
 
