@@ -38,14 +38,28 @@ $(document).ready(function() {
 		//best-seller-grid-layout 4-in-1-line
 		$(".width-seller").show();
 
+
+		//slick-carousel sale in down from md
+		
+		$('.sale-slider').slick({
+  			infinite: true,
+  			slidesToShow: 2,
+  			slidesToScroll: 1,
+  			autoplay: true
+		});
+
 	} else {
 		// console.log("large");
+		$(".sale-slider-1").before('<div class="container">');
+
+		
 		$("#icon-nav").removeClass("bg-light fixed-top h-100");		
 		out.html(out.hide());
 		outer.show().html();
 
 		//best-seller-grid-layout 4-in-1-line
 		$(".width-seller").hide();
+
 
 	}
 	}
@@ -64,15 +78,6 @@ $(document).ready(function(){
 
 //slick-carousel-sale-slider
 //
-$(document).ready(function(){
-	$('.sale-slider').slick({
-  		infinite: true,
-  		slidesToShow: 2,
-  		slidesToScroll: 1,
-  		autoplay: true
-
-	});
-});
 
 				
 
