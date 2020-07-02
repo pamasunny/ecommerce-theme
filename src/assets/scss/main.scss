@@ -82,9 +82,9 @@ body {
 		width: 100%;
 		height: 80vh;
 
-		// @include media-breakpoint-down(md) {
-		// 	height: 40vw;
-		// }
+		@include media-breakpoint-up(md) {
+			height: 100vh;
+		}
 
 	 
 	}
@@ -96,9 +96,9 @@ body {
 		width: 100%;
 		height: 80vh;
 		
-		// @include media-breakpoint-down(md) {
-		// 	height: 40vw;
-		// }
+		@include media-breakpoint-up(md) {
+			height: 100vh;
+		}
 	
 		
 	}
@@ -110,9 +110,9 @@ body {
 		width: 100%;
 		height: 80vh;
 	
-		// @include media-breakpoint-down(md) {
-		// 	height: 40vw;
-		// }
+		@include media-breakpoint-up(md) {
+			height: 100vh;
+		}
 		
 	}
 
@@ -173,8 +173,9 @@ body {
 					background-color: #aaa;
 					height: 80%;
 					margin: .7em;
-					@include media-breakpoint-up(md){
+					@include media-breakpoint-up(md) {
 					height: 60%;
+					margin: 0;
 					}
 				}
 
@@ -182,8 +183,9 @@ body {
 					background-color: #ccc;
 					margin: 0.7em;
 					height: 80%;
-					@include media-breakpoint-up(md){
+					@include media-breakpoint-up(md) {
 					height: 60%;
+					margin: 0;
 					}
 				}
 			}
@@ -203,6 +205,11 @@ body {
 	.container{
 		.new-arr {
 			position: relative;
+			
+			.slick-prev, .slick-next {
+				width: 80px;
+				z-index: 1;
+			}
 			.new-arr-1{
 				background-color: #999;
 				height: 40vh;
@@ -236,6 +243,54 @@ body {
 } 
 // sect-arrival-end
 					
+//sect-blog
+//
+.sect-blog {
+	height: 50%;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 70%;
+	}
+
+	.container {
+		height: 100%;
+		.row {
+			height: 100%;
+			position: relative;
+			// .blog-inner {
+			.slick-slide {
+				width: 100%;
+			}
+
+				.blog-inner-1 {
+					background-color: #bbb;
+					height: 50vh;
+
+					@include media-breakpoint-up(md) {
+						height: 60vh;
+					}
+				}
+				.blog-inner-2 {
+					background-color: #777;
+					height: 50vh;
+
+					@include media-breakpoint-up(md) {
+						height: 60vh;
+					}
+				}
+				.blog-inner-3 {
+					background-color: #999;
+					height: 50vh;
+
+					@include media-breakpoint-up(md) {
+						height: 60vh;
+					}
+				}
+			// }
+		}
+	}
+}
 
 
 					

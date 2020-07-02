@@ -48,6 +48,16 @@ $(document).ready(function() {
   			autoplay: true
 		});
 
+		//slick-carousel-blog-section
+		$('.blog-inner').slick({
+  			//infinite: true,
+  			slidesToShow: 1,
+  			//slidesToScroll: 1,
+  			centerMode: true,
+  			variableWidth: true
+  			//autoplay: true
+		});		
+
 	} else {
 		// console.log("large");
 		
