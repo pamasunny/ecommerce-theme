@@ -5,6 +5,8 @@
 
 
 body {
+	height: 100vh;
+	position: relative;
 	overflow-x: hidden;
 	@include media-breakpoint-up(md) {
 		overflow-x: hidden;
@@ -60,9 +62,9 @@ body {
 }
 
 .hero {
-	background-color: #111;
+	//background-color: #111;
 	overflow: hidden;
-	height: 60vh;
+	height: 80vh;
 
 	@include media-breakpoint-up(md) {
 		background-color: #111;	
@@ -78,7 +80,7 @@ body {
 		display: block;
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 
 		// @include media-breakpoint-down(md) {
 		// 	height: 40vw;
@@ -92,7 +94,7 @@ body {
 		display: block;
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 		
 		// @include media-breakpoint-down(md) {
 		// 	height: 40vw;
@@ -106,7 +108,7 @@ body {
 		display: block;
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 	
 		// @include media-breakpoint-down(md) {
 		// 	height: 40vw;
@@ -120,7 +122,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	height: 100%;
 	position: relative;
 	overflow: hidden;
 
@@ -146,15 +147,10 @@ body {
 //featured-products
 //
 .feat-bg {
-
-	 background-color: #bbb;
-	
+	background-color: #bbb;
 	height:100vh;
 	position: relative;
 	
-	// .feat-row .feat-col {
-	// 	display: flex;
-	// 	height: 100%;
 	.container {
 		height: 100%;
 		position: relative;
@@ -163,45 +159,83 @@ body {
 			position: relative;
 			.model-bg {
 				background-color: #999;
-				
 				height: 100%;
 				position: relative;
-			}
+				}
 
 			.glass-bg {
 				background-color: #eee;
 				display: flex;
 				height: 100%;
 				position: relative;
-
+				
 				.feat-single-1{
-					
 					background-color: #aaa;
 					height: 80%;
+					margin: .7em;
 					@include media-breakpoint-up(md){
-
-					//flex-direction: row;
 					height: 60%;
-					
 					}
 				}
 
 				.feat-single-2{
 					background-color: #ccc;
-					//flex-direction: row;
+					margin: 0.7em;
 					height: 80%;
 					@include media-breakpoint-up(md){
-
-					//flex-direction: row;
 					height: 60%;
-					
 					}
-
-					
 				}
 			}
 		}
 	}
-
-	// }
 }
+					
+// new arrivals 
+// 
+.sect-arr {
+	background-color: #bbb;
+	position: relative;
+	height: 40%;
+	@include media-breakpoint-up(md) {
+	height: 60%;
+	}
+	.container{
+		.new-arr {
+			position: relative;
+			.new-arr-1{
+				background-color: #999;
+				height: 40vh;
+				@include media-breakpoint-up(md) {
+					height: 60vh;
+				}
+			}
+			.new-arr-2{
+				background-color: #777;
+				height: 40vh;
+				@include media-breakpoint-up(md) {
+					height: 60vh;
+				}
+			}
+			.new-arr-3{
+				background-color: #555;
+				height: 40vh;
+				@include media-breakpoint-up(md) {
+					height: 60vh;
+				}
+			}
+			.new-arr-4{
+				background-color: #eee;
+				height: 40vh;
+				@include media-breakpoint-up(md) {
+					height: 60vh;
+				}
+			}
+		}
+	}
+} 
+// sect-arrival-end
+					
+
+
+					

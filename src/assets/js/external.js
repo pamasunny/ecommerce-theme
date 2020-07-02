@@ -76,8 +76,14 @@ $(document).ready(function(){
   });
 });
 
-//slick-carousel-sale-slider
+//slick-carousel-new-arrival
 //
+$('.new-arr').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true
+});
 
 				
 
