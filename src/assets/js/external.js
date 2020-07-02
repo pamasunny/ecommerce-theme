@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 	} else {
 		// console.log("large");
-		$(".sale-slider-1").before('<div class="container">');
+		
 
 		
 		$("#icon-nav").removeClass("bg-light fixed-top h-100");		

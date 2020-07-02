@@ -139,5 +139,69 @@ body {
 	background-color: #bbb;
 	height: 20vh;
 	overflow: hidden;
+	position: relative;
+}
 
+
+//featured-products
+//
+.feat-bg {
+
+	 background-color: #bbb;
+	
+	height:100vh;
+	position: relative;
+	
+	// .feat-row .feat-col {
+	// 	display: flex;
+	// 	height: 100%;
+	.container {
+		height: 100%;
+		position: relative;
+		.row {
+			height: 100%;
+			position: relative;
+			.model-bg {
+				background-color: #999;
+				
+				height: 100%;
+				position: relative;
+			}
+
+			.glass-bg {
+				background-color: #eee;
+				display: flex;
+				height: 100%;
+				position: relative;
+
+				.feat-single-1{
+					
+					background-color: #aaa;
+					height: 80%;
+					@include media-breakpoint-up(md){
+
+					//flex-direction: row;
+					height: 60%;
+					
+					}
+				}
+
+				.feat-single-2{
+					background-color: #ccc;
+					//flex-direction: row;
+					height: 80%;
+					@include media-breakpoint-up(md){
+
+					//flex-direction: row;
+					height: 60%;
+					
+					}
+
+					
+				}
+			}
+		}
+	}
+
+	// }
 }
