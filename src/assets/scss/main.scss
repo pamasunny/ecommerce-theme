@@ -6,12 +6,17 @@
 
 body {
 	height: 100vh;
-	position: relative;
-	overflow-x: hidden;
+	//position: relative;
+	overflow-x: hidden !important;
+	.slick-prev, .slick-next, .slick-arrow {
+		display: none !important;
+	}
+
 	@include media-breakpoint-up(md) {
 		overflow-x: hidden;
 	}
 }
+
 
 
 
@@ -259,10 +264,9 @@ body {
 			height: 100%;
 			position: relative;
 			// .blog-inner {
-			.slick-slide {
-				width: 100%;
-			}
-
+			// .slick-slide {
+			// 	width: 100%;
+				
 				.blog-inner-1 {
 					background-color: #bbb;
 					height: 50vh;
@@ -287,6 +291,8 @@ body {
 						height: 60vh;
 					}
 				}
+			// }
+
 			// }
 		}
 	}

@@ -50,11 +50,12 @@ $(document).ready(function() {
 
 		//slick-carousel-blog-section
 		$('.blog-inner').slick({
-  			//infinite: true,
-  			slidesToShow: 1,
+  			infinite: false,
+  			//slidesToShow: 1,
   			//slidesToScroll: 1,
   			centerMode: true,
-  			variableWidth: true
+  			swipeToSlide: true
+  			//variableWidth: true
   			//autoplay: true
 		});		
 
