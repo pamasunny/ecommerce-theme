@@ -6,7 +6,7 @@
 
 body {
 	height: 100vh;
-	//position: relative;
+	position: relative;
 	overflow-x: hidden !important;
 	.slick-prev, .slick-next, .slick-arrow {
 		display: none !important;
@@ -140,7 +140,7 @@ body {
 	}
 }
 
-
+// best-seller
 .best-seller {
 	background-color: #bbb;
 	height: 20vh;
@@ -175,22 +175,27 @@ body {
 				position: relative;
 				
 				.feat-single-1{
+					position: relative;
 					background-color: #aaa;
 					height: 80%;
 					margin: .7em;
 					@include media-breakpoint-up(md) {
 					height: 60%;
 					margin: 0;
+					max-width: 45%;
 					}
 				}
 
 				.feat-single-2{
+					position: relative;
 					background-color: #ccc;
 					margin: 0.7em;
 					height: 80%;
 					@include media-breakpoint-up(md) {
 					height: 60%;
 					margin: 0;
+					max-width: 45%;
+
 					}
 				}
 			}
@@ -298,5 +303,62 @@ body {
 	}
 }
 
+// gallery
+// 
+.gallery {
+	[class^=col],  {
+		height: 50vh;
+		
+		@include media-breakpoint-up(md) {
+			
+			height: 40vh;
+		}
+	}
+
+	[class~=col-md-6]  {
+		max-width: 50%;
+		@include media-breakpoint-up(md) {
+			max-width: 100%;
+		}
+
+	}
+
+	// .beard {
+	// 	 background-image: url('../images/beard.jpg');
+	// }
+
+	// .wayfer {
+	// 	background-image: url('../images/wayfer1.jpg');
+	// }
+
+	// .orange {
+	// 	background-image: url('../images/transorange.jpg');
+	// }
+
+	// .red {
+	// 	background-image: url('../images/transred.jpg');
+	// }
+
+	// .pink {
+	// 	background-image: url('../images/transpink.jpg');
+	// }
+
+	// .girl2 {
+	// 	background-image: linear-gradient(to right,blue 0%,red 100%),url('../images/girl2.jpg');
+	// 	background-repeat: no-repeat;
+	// 	background-position: 50% 30%;
+	// 	background-blend-mode: difference;
+
+	// }
+
+	// .girl1 {
+	// 	background-image: url('../images/girl1.jpg');
+	// 	//background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	background-position: 50% 50%;
+
+	// }
+
+}
 
 					
