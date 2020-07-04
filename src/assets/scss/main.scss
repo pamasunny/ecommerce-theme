@@ -361,4 +361,28 @@ body {
 
 }
 
+
+//footer 
+//
+// .footer {
+	
+	.foot-about {
+		[class^=col] {
+			height: 50vh;
+		}
+
+		[class~=col-xl-12] {
+			height: 20vh;
+		}
+	}
+
+	.foot-about:before {
+		content: "";
+		height: 1px;
+		background-color: #fff;
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+// }
 					
