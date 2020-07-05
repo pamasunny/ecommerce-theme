@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
 		//slick-carousel sale in down from md
-		
+		//$(".sale-slider").removeClass("sale-unslider");
 		$('.sale-slider').slick({
   			infinite: true,
   			slidesToShow: 2,
@@ -51,17 +51,16 @@ $(document).ready(function() {
 		//slick-carousel-blog-section
 		$('.blog-inner').slick({
   			infinite: false,
-  			//slidesToShow: 1,
-  			//slidesToScroll: 1,
   			centerMode: true,
   			swipeToSlide: true
-  			//variableWidth: true
-  			//autoplay: true
 		});		
+
 
 	} else {
 		// console.log("large");
 		
+		//slick-carousel-sale-unslick 
+		$(".sale-slider").slick('unslick');
 
 		
 		$("#icon-nav").removeClass("bg-light fixed-top h-100");		
