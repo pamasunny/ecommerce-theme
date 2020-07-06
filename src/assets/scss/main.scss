@@ -56,18 +56,19 @@ body {
 
 
 #icon-nav {
-	width: 23em;
+	width: 75%;
 	flex-direction: column;
 	@include media-breakpoint-up(md) {
 		width: 100%;
 		flex-direction: row;
+	}
 
-	
+	@include media-breakpoint-up(sm) {
+		width: 25%;
 	}
 }
 
 .hero {
-	//background-color: #111;
 	overflow: hidden;
 	height: 80vh;
 
@@ -144,7 +145,7 @@ body {
 	
 	
 		.slick-slide {
-			margin-left: 1em;
+			margin: 0 1em;
 		}
 
 	[class^=col] {
@@ -276,6 +277,8 @@ body {
 	height: 50%;
 	position: relative;
 
+	
+
 	@include media-breakpoint-up(md) {
 		height: 70%;
 	}
@@ -300,7 +303,6 @@ body {
 				.blog-inner-2 {
 					background-color: #777;
 					height: 50vh;
-
 					@include media-breakpoint-up(md) {
 						height: 60vh;
 					}
@@ -308,7 +310,6 @@ body {
 				.blog-inner-3 {
 					background-color: #999;
 					height: 50vh;
-
 					@include media-breakpoint-up(md) {
 						height: 60vh;
 					}
