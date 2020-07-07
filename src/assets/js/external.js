@@ -55,6 +55,16 @@ $(document).ready(function() {
   			swipeToSlide: true
 		});		
 
+		if (".show") {
+			$(".nav-backdrop").show();
+			$(".nav-backdrop").on("click", function() {
+				$(".navbar-nav").hide(100);
+				$
+
+			});
+		} 
+
+
 
 	} else {
 		// console.log("large");

@@ -36,6 +36,7 @@ body {
     transition:         all $transition ease;
 }
 
+
 .navbar  {
 	position: absolute;
 	background: transparent !important;
@@ -55,18 +56,35 @@ body {
 }
 
 
+
 #icon-nav {
-	width: 75%;
+	max-width: 65%;
 	flex-direction: column;
-	@include media-breakpoint-up(md) {
+	z-index: 100000000;
+	@include media-breakpoint-up(lg) {
 		width: 100%;
 		flex-direction: row;
 	}
-
-	@include media-breakpoint-up(sm) {
-		width: 25%;
-	}
 }
+
+.nav-backdrop {
+	content: "";
+	display: block;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,0.5);
+	z-index:1000;
+	top: 0;
+	left: 0;
+}
+
+	
+
+	// @include media-breakpoint-down(sm) {
+	// 	width: 75%;
+	// }
+
 
 .hero {
 	overflow: hidden;
