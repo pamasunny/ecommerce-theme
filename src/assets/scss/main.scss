@@ -58,13 +58,15 @@ body {
 
 
 #icon-nav {
-	max-width: 65%;
+	max-width: 70%;
 	flex-direction: column;
 	z-index: 100000000;
 	@include media-breakpoint-up(lg) {
 		width: 100%;
 		flex-direction: row;
 	}
+
+	
 }
 
 .nav-backdrop {
@@ -77,6 +79,19 @@ body {
 	z-index:1000;
 	top: 0;
 	left: 0;
+}
+
+.nav-close {
+	display: flex;
+	position: fixed;
+	width: 1.5em;
+	height: 2em;
+	top: 0;
+	left: 70%;
+	justify-content: center;
+	font-size: xx-large;
+
+
 }
 
 	

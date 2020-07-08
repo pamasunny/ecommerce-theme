@@ -55,15 +55,18 @@ $(document).ready(function() {
   			swipeToSlide: true
 		});		
 
-		if (".show") {
+		function navDisp() {
+				$(".nav-backdrop").hide();
+				$("#navbarSupportedContent").hide(100);
+		}
+
+		$(".navbar-toggler").on("click",function() {
 			$(".nav-backdrop").show();
-			$(".nav-backdrop").on("click", function() {
-				$(".navbar-nav").hide(100);
-				$
+			$("#navbarSupportedContent").show();
+			$(".nav-backdrop").on("click", navDisp);
+		});
 
-			});
-		} 
-
+		$(".nav-close").click(navDisp);
 
 
 	} else {
