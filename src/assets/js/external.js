@@ -62,15 +62,19 @@ $(document).ready(function() {
 
 		$(".navbar-toggler").on("click",function() {
 			$(".nav-backdrop").show();
+			$(".nav-close").show();
 			$("#navbarSupportedContent").show();
 			$(".nav-backdrop").on("click", navDisp);
 		});
+			$(".nav-close").click(navDisp);
 
-		$(".nav-close").click(navDisp);
 
 
 	} else {
 		// console.log("large");
+		
+		//nav-close 
+		$(".nav-close").hide();
 		
 		//slick-carousel-sale-unslick 
 		$(".sale-slider").slick('unslick');

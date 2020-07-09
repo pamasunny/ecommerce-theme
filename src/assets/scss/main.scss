@@ -62,6 +62,7 @@ body {
 	flex-direction: column;
 	z-index: 100000000;
 	@include media-breakpoint-up(lg) {
+		max-width: unset;
 		width: 100%;
 		flex-direction: row;
 	}
