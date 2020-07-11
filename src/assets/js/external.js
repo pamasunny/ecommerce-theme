@@ -66,9 +66,8 @@ $(document).ready(function() {
 			$("#navbarSupportedContent").show();
 			$(".nav-backdrop").on("click", navDisp);
 		});
+			//navbar-close-button
 			$(".nav-close").click(navDisp);
-
-
 
 	} else {
 		// console.log("large");
