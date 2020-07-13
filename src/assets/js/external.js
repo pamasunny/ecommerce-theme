@@ -2,9 +2,6 @@ import "bootstrap";
 import $ from "jquery";
 import "slick-carousel";
 
-
-
-
 $(document).ready(function() {
 	
 	// variable init
@@ -78,7 +75,7 @@ $(document).ready(function() {
 		//slick-carousel-sale-unslick 
 		$(".sale-slider").slick('unslick');
 
-		
+		//icon-nav-remove-class
 		$("#icon-nav").removeClass("bg-light fixed-top h-100");		
 		out.html(out.hide());
 		outer.show().html();
